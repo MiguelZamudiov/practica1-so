@@ -1,0 +1,13 @@
+search_engine.c: In function ‘search_with_header’:
+search_engine.c:94:5: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   94 |     fread(&n_buckets, sizeof(uint32_t), 1, indexf);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+search_engine.c:95:5: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   95 |     fread(&n_nodes, sizeof(uint32_t), 1, indexf);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+search_engine.c:96:5: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   96 |     fread(&buckets_off, sizeof(uint64_t), 1, indexf);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+search_engine.c:97:5: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   97 |     fread(&nodes_off, sizeof(uint64_t), 1, indexf);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
