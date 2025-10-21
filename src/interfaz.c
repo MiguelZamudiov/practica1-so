@@ -1,4 +1,4 @@
-#include <stdio.h>
+t#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <fcntl.h>
@@ -27,8 +27,8 @@ void receive_message(const char *fifo_path, char *buffer, size_t size) {
 }
 
 int main() {
-    const char *fifo_req = "fifo_req";
-    const char *fifo_resp = "fifo_resp";
+    const char *fifo_req = "fifo_request";
+    const char *fifo_resp = "fifo_response";
     create_fifo(fifo_req);
     create_fifo(fifo_resp);
 
