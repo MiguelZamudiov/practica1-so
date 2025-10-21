@@ -1,0 +1,16 @@
+# Archivos de datos grandes (no incluidos en el repositorio)
+data/books_data.csv
+data/Books_rating.csv
+data/reviews_index.bin
+data/index_books.bin
+
+# Ejecutables compilados
+src/indexador
+src/search_engine
+
+# FIFOs temporales
+fifo_req
+fifo_resp
+
+# Logs y archivos temporales
+*.log
