@@ -1,14 +1,14 @@
-CC = gcc
-CFLAGS = -O2 -std=c11 -Wall
+CC=gcc
+CFLAGS=-O2 -std=c11 -Wall
 
-SRC = search_engine.c
-BIN = worker
+# Compilar solo worker e interfaz
+all: worker interfaz
 
-all: $(BIN)
+worker: src/search_engine.c
+	$(CC) $(CFLAGS) src/search_engine.c -o worker -lrt
 
-$(BIN): $(SRC)
-	$(CC) $(CFLAGS) -o $(BIN) $(SRC) -lrt
+interfaz: src/interfaz.c
+	$(CC) $(CFLAGS) src/interfaz.c -o interfaz
 
 clean:
-	rm -f $(BIN)
-
+	rm -f worker interfaz
