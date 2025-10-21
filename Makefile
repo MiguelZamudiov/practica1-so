@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-O2 -std=c11 -Wall
-all: all: worker indexer_books indexer_reviews interfaz
+all: worker indexer_books indexer_reviews interfaz
 
 worker: src/search_engine.c
 $(CC) $(CFLAGS) src/search_engine.c -o worker -lrt
